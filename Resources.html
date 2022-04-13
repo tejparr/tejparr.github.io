@@ -2,7 +2,6 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-    
     body{margin:0;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -11,48 +10,6 @@
     * {
     box-sizing: border-box;
     }
-    .main {
-    padding: 16px;
-    margin-top: 64px;
-    font-family: "Times New Roman"; 
-    color: rgb(59, 59, 59);
-    }
-    .container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    }
-    .image {
-    display: block;
-    width: 100%;
-    height: auto;
-    }
-    .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #40424b;
-    }
-    .container:hover .overlay {
-    opacity: 0.8;
-    }
-    .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    }
     .headerbar {
     background-color: rgb(34, 34, 34);
     overflow: hidden;
@@ -60,7 +17,6 @@
     left:0;
     top: 0;
     width: 100%;
-    z-index: 999;
     }
     .headerbar a{
     float: left ;
@@ -96,6 +52,19 @@
     li a:hover:not(.active) {
     background-color: #111;
     }
+    .main {
+    padding: 16px;
+    margin-top: 56px;
+    font-family: "Times New Roman"; 
+    color: rgb(81, 81, 81);
+    text-align: left;
+    font-weight: bold;
+    }
+    .main a{
+    font-family: "Times New Roman"; 
+    color: rgb(138, 138, 138);    
+    text-decoration: none;
+    }
     .footerbar{
     left: 0;
     bottom: 0;
@@ -115,23 +84,22 @@
     font-size: 16px;
     text-align: center;
     }
-
     .column {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox; 
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
-    padding: 0 80px;
+    padding: 0 160px;
     }
     .row {
-    -ms-flex: 33%; /* IE10 */
+    -ms-flex: 33%;
     flex: 33%;
     max-width: 100%;
-    padding: 0 0px;
+    padding: 0 40px;
     }
     .row img {
     display: inline-block;
-    margin-top: 0px;
+    margin-top: 16px;
     width: 100%;
     vertical-align: middle;
     }
@@ -141,56 +109,47 @@
     flex: 100%;
     max-width: 100%;
     }
-    
 }
+
+
 </style>
 
 <head>
-<title>Thomas Parr</title>
+<title>Thomas Parr - Resources</title>
 </head>
 
 <body>
-<div class="headerbar">
-    <ul>
-        <a href="Index.html" style="padding: 28px 80px;">Thomas Parr</a>
-        <li><a href="https://github.com/tejparr">Code</a></li>
-        <li><a href="Resources.html">Resources</a></li>
-        <li><a href="Talks.html">Talks</a></li>    
-      </ul>
-</div>
+    <div class="headerbar">
+        <ul>
+            <a href="Index.html" style="padding: 28px 80px;">Thomas Parr</a>
+            <li><a href="https://github.com/tejparr">Code</a></li>
+            <li><a href="Resources.html">Resources</a></li>
+            <li><a href="Talks.html">Talks</a></li>    
+          </ul>
+    </div>
 
-<div class="main">    
+<div class="main">
     <div class="column"> 
         <div class="row">
-        <a href="Talks.html">
-            <div class="container">
-                <img src="Brain 1.jpeg" class="image">
-                <div class="overlay">
-                    <div class="text">Talks</div>
-                </div>
-            </div>
-        </a>
-        </div>
-
-        <div class="row">
-            <a href="Resources.html">
-            <div class="container">
-                <img src="Brain 2.jpeg" class="image">
-                <div class="overlay">
-                    <div class="text">Resources</div>
-                </div>
-            </div>
+            <a href="https://mitpress.mit.edu/books/active-inference">
+                <img src="book.jpg" style="width:80%">  
             </a>
         </div>
         <div class="row">
-            <a href="https://github.com/tejparr">
-            <div class="container">
-            <img src="Brain 3.jpeg" class="image">
-            <div class="overlay">
-                <div class="text">Code</div>
-            </div>
-            </div>
-            </a>
+            <h2> The Active Inference Book</h2>
+            <h3>By Thomas Parr, Giovanni Pezzulo and Karl J. Friston </h3>
+            <p>The first comprehensive treatment of active inference, an integrative perspective on brain, cognition, and behavior used across multiple disciplines. </p>
+       </div>
+    </div>
+    <div class="column"> 
+        <div class="row">
+            <a href = "https://tejparr.github.io/Physics/Slides main.htm">
+                <img src="image011.gif" style="width:80%">
+            </a>  
+        </div>
+        <div class="row">
+            <h2>Physics</h2>
+            <p>This links to a resource adapted from a seminar series based upon <a href="https://arxiv.org/ftp/arxiv/papers/1906/1906.10184.pdf">A free energy principle for a particular kind of physics (Friston 2019)</a>. It provides a graphical introduction to stochastic dynamical systems and their interpretation accross different scientific disciplines</p>
        </div>
     </div>
 </div>
