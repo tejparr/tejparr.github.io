@@ -2,116 +2,146 @@
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-    body{margin:0;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;}
+    body {
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
     * {
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
     .headerbar {
-    background-color: rgb(34, 34, 34);
-    overflow: hidden;
-    position:fixed;
-    left:0;
-    top: 0;
-    width: 100%;
+        background-color: rgb(34, 34, 34);
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
     }
-    .headerbar a{
-    float: left ;
-    color: azure; 
-    display: block;
-    text-align: left;
-    padding: 28px 10px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: "Times New Roman"; 
-    font-weight: bold;
+    .headerbar a {
+        float: left;
+        color: azure; 
+        display: block;
+        text-align: left;
+        padding: 14px 10px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: "Times New Roman"; 
+        font-weight: bold;
     }
     ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
     }
-
     li {
-    float: right;
+        float: right;
     }
-
     li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 16px;
     }
-
     li a:hover:not(.active) {
-    background-color: #111;
+        background-color: #111;
     }
     .main {
-    padding: 16px;
-    margin-top: 56px;
-    font-family: "Times New Roman"; 
-    color: rgb(81, 81, 81);
-    text-align: left;
-    font-weight: bold;
+        padding: 16px;
+        margin-top: 56px;
+        font-family: "Times New Roman"; 
+        color: rgb(81, 81, 81);
+        text-align: left;
+        font-weight: bold;
     }
-    .main a{
-    font-family: "Times New Roman"; 
-    color: rgb(138, 138, 138);    
-    text-decoration: none;
+    .main a {
+        font-family: "Times New Roman"; 
+        color: rgb(138, 138, 138);    
+        text-decoration: none;
     }
-    .footerbar{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(34, 34, 34);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 28px;
-    line-height: 60%;
+    .footerbar {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(34, 34, 34);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 20px;
+        line-height: 1.5;
     }
-    .footerbar a{
-    color: azure;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    font-size: 16px;
-    text-align: center;
+    .footerbar a {
+        color: azure;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+        margin: 5px 0;
     }
     .column {
-    display: -ms-flexbox; 
-    display: flex;
-    -ms-flex-wrap: wrap; 
-    flex-wrap: wrap;
-    padding: 0 160px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        margin-bottom: 40px;
     }
     .row {
-    -ms-flex: 33%;
-    flex: 33%;
-    max-width: 100%;
-    padding: 0 40px;
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+        margin-bottom: 20px;
     }
     .row img {
-    display: inline-block;
-    margin-top: 16px;
-    width: 100%;
-    vertical-align: middle;
+        display: block;
+        margin: 16px auto;
+        max-width: 100%;
+        height: auto;
     }
-    @media screen and (max-width: 500px) {
-    .row {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+    .row h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
     }
-}
-
-
+    .row h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .row p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    @media screen and (min-width: 768px) {
+        .headerbar a {
+            padding: 28px 10px;
+            font-size: 18px;
+        }
+        .column {
+            padding: 0 160px;
+        }
+        .row {
+            flex: 50%;
+            max-width: 50%;
+            padding: 0 40px;
+        }
+        .row img {
+            width: 80%;
+        }
+        .row h2 {
+            font-size: 28px;
+        }
+        .row h3 {
+            font-size: 20px;
+        }
+        .row p {
+            font-size: 18px;
+        }
+    }
 </style>
 
 <head>
