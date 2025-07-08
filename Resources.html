@@ -1,162 +1,170 @@
 <!DOCTYPE html> 
 <html lang="en">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body {
-        margin: 0;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-    }
-    * {
-        box-sizing: border-box;
-    }
-    .headerbar {
-        background-color: rgb(34, 34, 34);
-        overflow: hidden;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-    }
-    .headerbar a {
-        float: left;
-        color: azure; 
-        display: block;
-        text-align: left;
-        padding: 14px 10px;
-        text-decoration: none;
-        font-size: 16px;
-        font-family: "Times New Roman"; 
-        font-weight: bold;
-    }
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
-    li {
-        float: right;
-    }
-    li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 16px;
-    }
-    li a:hover:not(.active) {
-        background-color: #111;
-    }
-    .main {
-        padding: 16px;
-        margin-top: 56px;
-        font-family: "Times New Roman"; 
-        color: rgb(81, 81, 81);
-        text-align: left;
-        font-weight: bold;
-    }
-    .main a {
-        font-family: "Times New Roman"; 
-        color: rgb(138, 138, 138);    
-        text-decoration: none;
-    }
-    .footerbar {
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: rgb(34, 34, 34);
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        padding: 20px;
-        line-height: 1.5;
-    }
-    .footerbar a {
-        color: azure;
-        font-family: 'Times New Roman', Times, serif;
-        text-decoration: none;
-        font-size: 16px;
-        text-align: center;
-        margin: 5px 0;
-    }
-    .column {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 20px;
-        margin-bottom: 40px;
-    }
-    .row {
-        flex: 100%;
-        max-width: 100%;
-        padding: 0 20px;
-        margin-bottom: 20px;
-    }
-    .row img {
-        display: block;
-        margin: 16px auto;
-        max-width: 100%;
-        height: auto;
-    }
-    .row h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    .row h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-    .row p {
-        font-size: 16px;
-        line-height: 1.5;
-    }
-    @media screen and (min-width: 768px) {
-        .headerbar a {
-            padding: 28px 10px;
-            font-size: 18px;
-        }
-        .column {
-            padding: 0 160px;
-        }
-        .row {
-            flex: 50%;
-            max-width: 50%;
-            padding: 0 40px;
-        }
-        .row img {
-            width: 80%;
-        }
-        .row h2 {
-            font-size: 28px;
-        }
-        .row h3 {
-            font-size: 20px;
-        }
-        .row p {
-            font-size: 18px;
-        }
-    }
-</style>
-
 <head>
 <title>Thomas Parr - Resources</title>
+<style>
+    body{margin:0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;}
+    * {
+    box-sizing: border-box;
+    }
+    .headerbar {
+    background-color: rgb(34, 34, 34);
+    position:fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    }
+    .site-title{
+    color: azure; 
+    display: block;
+    text-align: left;
+    padding: 28px 80px 28px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Times New Roman"; 
+    font-weight: bold;
+    }
+    nav {
+    position: relative;
+    }
+    .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: azure;
+    cursor: pointer;
+    padding: 14px 20px;
+    }
+    #nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    }
+    #nav-links li {
+    float: none;
+    }
+    #nav-links li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    }
+    #nav-links li a:hover:not(.active) {
+    background-color: #111;
+    }
+    .main {
+    padding: 16px;
+    margin-top: 56px;
+    font-family: "Times New Roman"; 
+    color: rgb(81, 81, 81);
+    text-align: left;
+    font-weight: bold;
+    }
+    .main a{
+    font-family: "Times New Roman"; 
+    color: rgb(138, 138, 138);    
+    text-decoration: none;
+    }
+    .footerbar{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(34, 34, 34);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 28px;
+    line-height: 60%;
+    }
+    .footerbar a{
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    }
+    .column {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 160px;
+    }
+    .row {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 100%;
+    padding: 0 40px;
+    }
+    .row img {
+    display: inline-block;
+    margin-top: 16px;
+    width: 100%;
+    vertical-align: middle;
+    }
+    @media screen and (max-width: 500px) {
+    .row {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    }
+    .menu-icon {
+    display: block;
+    }
+    #nav-links {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 56px;
+    background: #333;
+    flex-direction: column;
+    width: 150px;
+    z-index: 1001;
+    }
+    #nav-links.show {
+    display: flex;
+    }
+    #nav-links li a {
+    padding: 14px 16px;
+    border-bottom: 1px solid #444;
+    }
+    }
+</style>
 </head>
-
 <body>
-    <div class="headerbar">
-        <ul>
-            <a href="index.html" style="padding: 28px 80px;">Thomas Parr</a>
-            <li><a href="https://github.com/tejparr">Code</a></li>
-            <li><a href="Resources.html">Resources</a></li>
-            <li><a href="Talks.html">Talks</a></li>    
-          </ul>
-    </div>
+<div class="headerbar">
+    <a href="index.html" class="site-title">Thomas Parr</a>
+    <nav>
+      <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+      <ul id="nav-links">
+        <li><a href="https://github.com/tejparr">Code</a></li>
+        <li><a href="Resources.html">Resources</a></li>
+        <li><a href="Talks.html">Talks</a></li>
+      </ul>
+    </nav>
+</div>
+<script>
+function toggleMenu() {
+  var nav = document.getElementById('nav-links');
+  nav.classList.toggle('show');
+}
+</script>
 
 <div class="main">
     <div class="column"> 
