@@ -100,50 +100,51 @@
     text-align: center;
     }
     .column {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 160px;
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 160px;
     }
     .row {
-    -ms-flex: 33%; /* IE10 */
-    flex: 33%;
-    max-width: 100%;
-    padding: 0 40px;
+        -ms-flex: 33%; /* IE10 */
+        flex: 33%;
+        max-width: 100%;
+        padding: 0 40px;
     }
     .row img {
-    display: inline-block;
-    margin-top: 16px;
-    width: 100%;
-    vertical-align: middle;
+        display: inline-block;
+        margin-top: 16px;
+        width: 100%;
+        vertical-align: middle;
     }
-    @media screen and (max-width: 500px) {
-    .row {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-    }
-    .menu-icon {
-    display: block;
-    }
-    #nav-links {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 56px;
-    background: #333;
-    flex-direction: column;
-    width: 150px;
-    z-index: 1001;
-    }
-    #nav-links.show {
-    display: flex;
-    }
-    #nav-links li a {
-    padding: 14px 16px;
-    border-bottom: 1px solid #444;
-    }
+    @media screen and (max-width: 700px) {
+        .column {
+            flex-direction: column;
+            padding: 0 10px;
+        }
+        .row {
+            flex: 100%;
+            max-width: 100%;
+            padding: 0 0px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 24px;
+            display: block;
+        }
+        .row img {
+            width: 100%;
+            max-width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .row h2, .row h3, .row p {
+            margin-top: 0;
+            margin-bottom: 8px;
+            word-break: break-word;
+        }
     }
 </style>
 </head>
