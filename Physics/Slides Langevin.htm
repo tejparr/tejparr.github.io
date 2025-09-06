@@ -1,93 +1,10 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 15">
-<meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="Slides%20Langevin_files/filelist.xml">
-<link rel=Edit-Time-Data href="Slides%20Langevin_files/editdata.mso">
-<!--[if !mso]>
-<style>
-v\:* {behavior:url(#default#VML);}
-o\:* {behavior:url(#default#VML);}
-w\:* {behavior:url(#default#VML);}
-.shape {behavior:url(#default#VML);}
-</style>
-<![endif]--><!--[if gte mso 9]><xml>
- <o:DocumentProperties>
-  <o:Author>Thomas Parr</o:Author>
-  <o:Template>Normal</o:Template>
-  <o:LastAuthor>Thomas Parr</o:LastAuthor>
-  <o:Revision>26</o:Revision>
-  <o:TotalTime>49</o:TotalTime>
-  <o:Created>2019-03-12T21:53:00Z</o:Created>
-  <o:LastSaved>2019-03-27T17:32:00Z</o:LastSaved>
-  <o:Pages>2</o:Pages>
-  <o:Words>29</o:Words>
-  <o:Characters>166</o:Characters>
-  <o:Lines>1</o:Lines>
-  <o:Paragraphs>1</o:Paragraphs>
-  <o:CharactersWithSpaces>194</o:CharactersWithSpaces>
-  <o:Version>15.00</o:Version>
- </o:DocumentProperties>
- <o:OfficeDocumentSettings>
-  <o:AllowPNG/>
- </o:OfficeDocumentSettings>
-</xml><![endif]-->
-<link rel=themeData href="Slides%20Langevin_files/themedata.thmx">
-<link rel=colorSchemeMapping
-href="Slides%20Langevin_files/colorschememapping.xml">
+<link rel="stylesheet" href="../styles.css">
 <!--[if gte mso 9]><xml>
- <w:WordDocument>
-  <w:View>Print</w:View>
-  <w:Zoom>130</w:Zoom>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
-  <w:TrackMoves>false</w:TrackMoves>
-  <w:TrackFormatting/>
-  <w:PunctuationKerning/>
-  <w:ValidateAgainstSchemas/>
-  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
-  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
-  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
-  <w:DoNotPromoteQF/>
-  <w:LidThemeOther>EN-GB</w:LidThemeOther>
-  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
-  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
-  <w:Compatibility>
-   <w:BreakWrappedTables/>
-   <w:SnapToGridInCell/>
-   <w:WrapTextWithPunct/>
-   <w:UseAsianBreakRules/>
-   <w:DontGrowAutofit/>
-   <w:SplitPgBreakAndParaMark/>
-   <w:EnableOpenTypeKerning/>
-   <w:DontFlipMirrorIndents/>
-   <w:OverrideTableStyleHps/>
-  </w:Compatibility>
-  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
-  <m:mathPr>
-   <m:mathFont m:val="Cambria Math"/>
-   <m:brkBin m:val="before"/>
-   <m:brkBinSub m:val="&#45;-"/>
-   <m:smallFrac m:val="off"/>
-   <m:dispDef/>
-   <m:lMargin m:val="0"/>
-   <m:rMargin m:val="0"/>
-   <m:defJc m:val="centerGroup"/>
-   <m:wrapIndent m:val="1440"/>
-   <m:intLim m:val="subSup"/>
-   <m:naryLim m:val="undOvr"/>
-  </m:mathPr></w:WordDocument>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
-  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
-  LatentStyleCount="371">
   <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
   <w:LsdException Locked="false" Priority="9" SemiHidden="true"
@@ -903,10 +820,30 @@ div.WordSection1
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
  </o:shapelayout></xml><![endif]-->
+<!-- CSS moved to shared styles.css -->
 </head>
 
 <body lang=EN-GB style='tab-interval:36.0pt'>
 
+<div class="headerbar">
+    <a href="../index.html" class="site-title">Thomas Parr</a>
+    <nav>
+      <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+      <ul id="nav-links">
+        <li><a href="https://github.com/tejparr">Code</a></li>
+        <li><a href="../Resources.html">Resources</a></li>
+        <li><a href="../Talks.html">Talks</a></li>
+      </ul>
+    </nav>
+</div>
+<script>
+function toggleMenu() {
+  var nav = document.getElementById('nav-links');
+  nav.classList.toggle('show');
+}
+</script>
+
+<div class="physics-main">
 <div class=WordSection1>
 
 <h1 align=center style='text-align:center'><span class=SpellE>Langevin</span>
@@ -978,6 +915,15 @@ EN-GB;mso-no-proof:yes;text-decoration:none;text-underline:none'><!--[if gte vml
 border=0 width=672 height=816 src="Slides%20Langevin_files/image007.png"
 v:shapes="Picture_x0020_4"></span><![endif]></span></a></p>
 
+</div>
+</div>
+
+<div class ="footerbar">
+
+    <a href="https://orcid.org/0000-0001-5108-5743">ORCID</a> <br>
+    <a href="http://scholar.google.co.uk/citations?user=-_yvOdUAAAAJ&hl=en">Google scholar</a> <br>
+    <a href="http://www.researchgate.net/profile/Thomas_Parr2">ResearchGate</a> 
+    
 </div>
 
 </body>

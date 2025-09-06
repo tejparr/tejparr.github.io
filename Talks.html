@@ -3,119 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <title>Thomas Parr - Talks</title>
-<style>
-    body{margin:0;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;}
-    * {
-    box-sizing: border-box;
-    }
-    .headerbar {
-    background-color: rgb(34, 34, 34);
-    position:fixed;
-    left:0;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 56px;
-    }
-    .site-title{
-    color: azure; 
-    display: block;
-    text-align: left;
-    padding: 28px 80px 28px 10px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: "Times New Roman"; 
-    font-weight: bold;
-    }
-    nav {
-    position: relative;
-    }
-    .menu-icon {
-    display: none;
-    font-size: 28px;
-    color: azure;
-    cursor: pointer;
-    padding: 14px 20px;
-    }
-    #nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background: none;
-    }
-    #nav-links li {
-    float: none;
-    }
-    #nav-links li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: "Times New Roman";
-    font-weight: bold;
-    }
-    #nav-links li a:hover:not(.active) {
-    background-color: #111;
-    }
-    .main {
-    padding: 16px;
-    margin-top: 56px;
-    font-family: "Times New Roman"; 
-    color: rgb(59, 59, 59);
-    text-align: center;
-    }
-    .footerbar{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(34, 34, 34);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 28px;
-    line-height: 60%;
-    }
-    .footerbar a{
-    color: azure;
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none;
-    font-size: 16px;
-    text-align: center;
-    }
-    @media screen and (max-width: 500px) {
-    .menu-icon {
-    display: block;
-    }
-    #nav-links {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 56px;
-    background: #333;
-    flex-direction: column;
-    width: 150px;
-    z-index: 1001;
-    }
-    #nav-links.show {
-    display: flex;
-    }
-    #nav-links li a {
-    padding: 14px 16px;
-    border-bottom: 1px solid #444;
-    }
-    }
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="headerbar">
@@ -125,7 +13,7 @@
       <ul id="nav-links">
         <li><a href="https://github.com/tejparr">Code</a></li>
         <li><a href="Resources.html">Resources</a></li>
-        <li><a href="Talks.html">Talks</a></li>
+        <li><a href="Talks.html" class="active">Talks</a></li>
       </ul>
     </nav>
 </div>
